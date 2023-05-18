@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Technovation Girls Survey</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+      <h1 id="title">Technovation Girls Survey</h1>
+      <p id="description">Thank you for taking the time to help us improve future projects</p>
+      <form id="survey-form">
+<fieldset>
+        <label id="name-label">Name
+          <input id="name" type="text" placeholder="Enter your name" required>
+          </label>
+
+          <label id="surname-label">Surname
+          <input id="surname" type="text" placeholder="Enter your surname" required>
+          </label>
+
+          <label id="email-label">Email
+            <input id="email" type="email" placeholder="Enter your email" required>
+            </label>
+
+            <label id="number-label">Year of participation
+            <input id="number" type="number" placeholder="year" min="2000" max="2023" required>
+            </label>
+</fieldset>
+<fieldset>
+            <label>Which platform did you prefer to get information on
+            <select id="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">Facebook</option>
+              <option value="2">Discord</option>
+              <option value="3">Email</option>
+              <option value="4">Other</option>
+              </select>
+              </label>
+
+              <label>
+                Which part of the lessons was the most interesting for you? 
+                <label><input type="radio" name="bestlessons" class="inline" value="businessplan">Business Plan </label>
+                <label><input type="radio" name="bestlessons" class="inline" value="coding">Coding</label>
+                <label><input type="radio" name="bestlessons" class="inline" value="pitch">Pitch</label>
+
+                </label>
+</fieldset>
+<fieldset>
+                <label> I would like to participate in the following seasons as </label>
+                  <label>Participant<input type="checkbox" value="participant" class="inline"></label>
+                   <label>Mentor<input type="checkbox" value="mentor" class="inline"></label>
+                </fieldset>
+
+      <label>Any comments or suggestions?<textarea name="additionalinfo" rows="6" cols="50%"> </textarea>
+        </label>
+        <input type="submit" id="submit">
+        </form>
+      </body>
+  </html>
